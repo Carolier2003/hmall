@@ -1,4 +1,3 @@
-D:\develop\javaproject\hmall\cart-service\src\main\java\com\hmall\cart\client\ItemClient.java
 D:\develop\javaproject\hmall\cart-service\src\main\java\com\hmall\cart\domain\po\Cart.java
 D:\develop\javaproject\hmall\cart-service\src\main\java\com\hmall\cart\service\impl\CartServiceImpl.java
 D:\develop\javaproject\hmall\cart-service\src\main\java\com\hmall\cart\controller\CartController.java
@@ -6,5 +5,4 @@ D:\develop\javaproject\hmall\cart-service\src\main\java\com\hmall\cart\service\I
 D:\develop\javaproject\hmall\cart-service\src\main\java\com\hmall\cart\domain\dto\CartFormDTO.java
 D:\develop\javaproject\hmall\cart-service\src\main\java\com\hmall\cart\mapper\CartMapper.java
 D:\develop\javaproject\hmall\cart-service\src\main\java\com\hmall\cart\CartApplication.java
-D:\develop\javaproject\hmall\cart-service\src\main\java\com\hmall\cart\domain\dto\ItemDTO.java
 D:\develop\javaproject\hmall\cart-service\src\main\java\com\hmall\cart\domain\vo\CartVO.java
