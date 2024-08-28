@@ -99,3 +99,216 @@ java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 1 millisec
 11:22:00:402 DEBUG 50576 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
 11:22:00:404 DEBUG 50576 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
 11:22:00:408 DEBUG 50576 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+14:52:29:568  WARN 50576 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+14:52:29:568  WARN 50576 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+14:52:29:593  WARN 50576 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+14:52:29:598  WARN 50576 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+14:52:30:446  INFO 50576 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+14:52:30:471  INFO 50576 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+14:52:30:806  INFO 50576 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+14:52:30:806  INFO 50576 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@49e9ea25[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+14:52:30:806  INFO 50576 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1724815036054_192.168.100.18_3736
+14:52:30:811  INFO 50576 --- [nacos-grpc-client-executor-2664] c.a.n.c.remote.client.grpc.GrpcClient    : [1724815036054_192.168.100.18_3736]Ignore complete event,isRunning:false,isAbandon=false
+14:52:30:812  INFO 50576 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@1d745b[Running, pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 2664]
+14:52:30:818  INFO 50576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+14:52:30:834  INFO 50576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+14:52:38:872  INFO 71904 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 11.0.19 on Carol with PID 71904 (D:\develop\javaproject\hmall\cart-service\target\classes started by 19667 in D:\develop\javaproject\hmall)
+14:52:38:874 DEBUG 71904 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+14:52:38:875  INFO 71904 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+14:52:39:829  INFO 71904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+14:52:39:833  INFO 71904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+14:52:39:866  INFO 71904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+14:52:40:135  INFO 71904 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5eedfd22-a846-3620-a82f-441ddd69eac4
+14:52:40:564  INFO 71904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+14:52:40:575  INFO 71904 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+14:52:40:575  INFO 71904 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+14:52:40:750  INFO 71904 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+14:52:40:750  INFO 71904 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1826 ms
+14:52:40:957  INFO 71904 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+14:52:46:071  INFO 71904 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+14:52:46:121  INFO 71904 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+14:52:48:557  INFO 71904 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+14:52:48:804  INFO 71904 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 0f027561-3311-4eef-9b3b-44d718423426
+14:52:48:908  INFO 71904 --- [main] org.reflections.Reflections              : Reflections took 51 ms to scan 1 urls, producing 3 keys and 6 values 
+14:52:48:956  INFO 71904 --- [main] org.reflections.Reflections              : Reflections took 17 ms to scan 1 urls, producing 4 keys and 9 values 
+14:52:48:971  INFO 71904 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 3 keys and 10 values 
+14:52:48:977  WARN 71904 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+14:52:48:984  INFO 71904 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 1 keys and 5 values 
+14:52:48:994  INFO 71904 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 1 keys and 7 values 
+14:52:49:003  INFO 71904 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 2 keys and 8 values 
+14:52:49:007  WARN 71904 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+14:52:49:008  INFO 71904 --- [main] com.alibaba.nacos.common.remote.client   : [0f027561-3311-4eef-9b3b-44d718423426] RpcClient init label, labels = {module=naming, source=sdk}
+14:52:49:012  INFO 71904 --- [main] com.alibaba.nacos.common.remote.client   : [0f027561-3311-4eef-9b3b-44d718423426] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+14:52:49:012  INFO 71904 --- [main] com.alibaba.nacos.common.remote.client   : [0f027561-3311-4eef-9b3b-44d718423426] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+14:52:49:013  INFO 71904 --- [main] com.alibaba.nacos.common.remote.client   : [0f027561-3311-4eef-9b3b-44d718423426] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+14:52:49:015  INFO 71904 --- [main] com.alibaba.nacos.common.remote.client   : [0f027561-3311-4eef-9b3b-44d718423426] Try to connect to server on start up, server: {serverIp = '192.168.100.25', server main port = 8848}
+14:52:52:225  INFO 71904 --- [main] com.alibaba.nacos.common.remote.client   : [0f027561-3311-4eef-9b3b-44d718423426] Success to connect to server [192.168.100.25:8848] on start up, connectionId = 1724827973470_192.168.100.18_13130
+14:52:52:226  INFO 71904 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [0f027561-3311-4eef-9b3b-44d718423426] Notify connected event to listeners.
+14:52:52:227  INFO 71904 --- [main] com.alibaba.nacos.common.remote.client   : [0f027561-3311-4eef-9b3b-44d718423426] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+14:52:52:227  INFO 71904 --- [main] com.alibaba.nacos.common.remote.client   : [0f027561-3311-4eef-9b3b-44d718423426] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1130/0x00000008007e4440
+14:52:52:271  INFO 71904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+14:52:52:283  INFO 71904 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 192.168.220.1:8082 register finished
+14:52:52:787  INFO 71904 --- [nacos-grpc-client-executor-10] com.alibaba.nacos.common.remote.client   : [0f027561-3311-4eef-9b3b-44d718423426] Receive server push request, request = NotifySubscriberRequest, requestId = 17
+14:52:52:790  INFO 71904 --- [nacos-grpc-client-executor-10] com.alibaba.nacos.common.remote.client   : [0f027561-3311-4eef-9b3b-44d718423426] Ack server push request, request = NotifySubscriberRequest, requestId = 17
+14:52:54:188  INFO 71904 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+14:52:54:189  INFO 71904 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+14:52:54:192  INFO 71904 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+14:52:54:214  INFO 71904 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+14:52:54:316  INFO 71904 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 18.069 seconds (JVM running for 19.542)
+14:53:01:779  INFO 71904 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:53:01:780  INFO 71904 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+14:53:01:781  INFO 71904 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+14:53:01:889  INFO 71904 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+14:53:02:189  INFO 71904 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+14:53:02:197 DEBUG 71904 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+14:53:02:217 DEBUG 71904 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+14:53:02:260 DEBUG 71904 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+14:53:03:004  INFO 71904 --- [nacos-grpc-client-executor-15] com.alibaba.nacos.common.remote.client   : [0f027561-3311-4eef-9b3b-44d718423426] Receive server push request, request = NotifySubscriberRequest, requestId = 19
+14:53:03:005  INFO 71904 --- [nacos-grpc-client-executor-15] com.alibaba.nacos.common.remote.client   : [0f027561-3311-4eef-9b3b-44d718423426] Ack server push request, request = NotifySubscriberRequest, requestId = 19
+14:53:05:083 DEBUG 71904 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+14:53:05:085 DEBUG 71904 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+14:53:05:087 DEBUG 71904 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+14:54:10:028 DEBUG 71904 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+14:54:10:028 DEBUG 71904 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+14:54:10:031 DEBUG 71904 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+15:03:54:764  WARN 71904 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+15:03:54:764  WARN 71904 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+15:03:54:764  WARN 71904 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+15:03:54:813  WARN 71904 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+15:03:55:469  INFO 71904 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+15:03:55:474  INFO 71904 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+15:03:55:797  INFO 71904 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+15:03:55:797  INFO 71904 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@57745966[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+15:03:55:797  INFO 71904 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1724827973470_192.168.100.18_13130
+15:03:55:800  INFO 71904 --- [nacos-grpc-client-executor-172] c.a.n.c.remote.client.grpc.GrpcClient    : [1724827973470_192.168.100.18_13130]Ignore complete event,isRunning:false,isAbandon=false
+15:03:55:802  INFO 71904 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@67cb3937[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 173]
+15:03:55:805  INFO 71904 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+15:03:55:816  INFO 71904 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+15:04:03:888  INFO 71752 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 11.0.19 on Carol with PID 71752 (D:\develop\javaproject\hmall\cart-service\target\classes started by 19667 in D:\develop\javaproject\hmall)
+15:04:03:891 DEBUG 71752 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+15:04:03:891  INFO 71752 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+15:04:04:839  INFO 71752 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+15:04:04:841  INFO 71752 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+15:04:04:864  INFO 71752 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+15:04:05:063  INFO 71752 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5eedfd22-a846-3620-a82f-441ddd69eac4
+15:04:05:419  INFO 71752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+15:04:05:432  INFO 71752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:04:05:432  INFO 71752 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:04:05:602  INFO 71752 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:04:05:602  INFO 71752 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1657 ms
+15:04:05:798  INFO 71752 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+15:04:11:404  INFO 71752 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+15:04:11:432  INFO 71752 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+15:04:13:720  INFO 71752 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+15:04:13:903  INFO 71752 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of efa742b7-8c2f-48bb-a047-fa953f64d9d1
+15:04:13:943  INFO 71752 --- [main] org.reflections.Reflections              : Reflections took 20 ms to scan 1 urls, producing 3 keys and 6 values 
+15:04:13:963  INFO 71752 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 4 keys and 9 values 
+15:04:13:975  INFO 71752 --- [main] org.reflections.Reflections              : Reflections took 9 ms to scan 1 urls, producing 3 keys and 10 values 
+15:04:13:978  WARN 71752 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+15:04:13:983  INFO 71752 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 5 values 
+15:04:13:992  INFO 71752 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 1 keys and 7 values 
+15:04:14:001  INFO 71752 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 2 keys and 8 values 
+15:04:14:003  WARN 71752 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+15:04:14:005  INFO 71752 --- [main] com.alibaba.nacos.common.remote.client   : [efa742b7-8c2f-48bb-a047-fa953f64d9d1] RpcClient init label, labels = {module=naming, source=sdk}
+15:04:14:007  INFO 71752 --- [main] com.alibaba.nacos.common.remote.client   : [efa742b7-8c2f-48bb-a047-fa953f64d9d1] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+15:04:14:007  INFO 71752 --- [main] com.alibaba.nacos.common.remote.client   : [efa742b7-8c2f-48bb-a047-fa953f64d9d1] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+15:04:14:008  INFO 71752 --- [main] com.alibaba.nacos.common.remote.client   : [efa742b7-8c2f-48bb-a047-fa953f64d9d1] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+15:04:14:010  INFO 71752 --- [main] com.alibaba.nacos.common.remote.client   : [efa742b7-8c2f-48bb-a047-fa953f64d9d1] Try to connect to server on start up, server: {serverIp = '192.168.100.25', server main port = 8848}
+15:04:17:242  INFO 71752 --- [main] com.alibaba.nacos.common.remote.client   : [efa742b7-8c2f-48bb-a047-fa953f64d9d1] Success to connect to server [192.168.100.25:8848] on start up, connectionId = 1724828658470_192.168.100.18_3728
+15:04:17:243  INFO 71752 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [efa742b7-8c2f-48bb-a047-fa953f64d9d1] Notify connected event to listeners.
+15:04:17:244  INFO 71752 --- [main] com.alibaba.nacos.common.remote.client   : [efa742b7-8c2f-48bb-a047-fa953f64d9d1] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+15:04:17:244  INFO 71752 --- [main] com.alibaba.nacos.common.remote.client   : [efa742b7-8c2f-48bb-a047-fa953f64d9d1] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1130/0x00000008007e3c40
+15:04:17:298  INFO 71752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+15:04:17:311  INFO 71752 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 192.168.220.1:8082 register finished
+15:04:17:787  INFO 71752 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [efa742b7-8c2f-48bb-a047-fa953f64d9d1] Receive server push request, request = NotifySubscriberRequest, requestId = 23
+15:04:17:791  INFO 71752 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [efa742b7-8c2f-48bb-a047-fa953f64d9d1] Ack server push request, request = NotifySubscriberRequest, requestId = 23
+15:04:19:744  INFO 71752 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+15:04:19:745  INFO 71752 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+15:04:19:749  INFO 71752 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+15:04:19:776  INFO 71752 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+15:04:19:882  INFO 71752 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 18.671 seconds (JVM running for 20.184)
+15:12:21:754  WARN 71752 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+15:12:21:755  WARN 71752 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+15:12:21:755  WARN 71752 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+15:12:21:756  WARN 71752 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+15:12:22:740  INFO 71752 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+15:12:22:747  INFO 71752 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+15:12:23:077  INFO 71752 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+15:12:23:077  INFO 71752 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@588d8b91[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+15:12:23:077  INFO 71752 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1724828658470_192.168.100.18_3728
+15:12:23:080  INFO 71752 --- [nacos-grpc-client-executor-128] c.a.n.c.remote.client.grpc.GrpcClient    : [1724828658470_192.168.100.18_3728]Ignore complete event,isRunning:false,isAbandon=false
+15:12:23:082  INFO 71752 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@25149ccc[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 129]
+15:12:28:548  INFO 18776 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 11.0.19 on Carol with PID 18776 (D:\develop\javaproject\hmall\cart-service\target\classes started by 19667 in D:\develop\javaproject\hmall)
+15:12:28:551 DEBUG 18776 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+15:12:28:551  INFO 18776 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+15:12:29:541  INFO 18776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+15:12:29:545  INFO 18776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+15:12:29:574  INFO 18776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+15:12:29:855  INFO 18776 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=557f0ece-11f7-37f0-beb6-c76aa15f7f0b
+15:12:30:234  INFO 18776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+15:12:30:245  INFO 18776 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:12:30:246  INFO 18776 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:12:30:409  INFO 18776 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:12:30:409  INFO 18776 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1800 ms
+15:12:30:608  INFO 18776 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+15:12:37:723  INFO 18776 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+15:12:37:769  INFO 18776 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+15:12:40:793  INFO 18776 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+15:12:41:041  INFO 18776 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of dc19e873-97db-4929-b1c0-0c4c7a4fa091
+15:12:41:102  INFO 18776 --- [main] org.reflections.Reflections              : Reflections took 32 ms to scan 1 urls, producing 3 keys and 6 values 
+15:12:41:138  INFO 18776 --- [main] org.reflections.Reflections              : Reflections took 13 ms to scan 1 urls, producing 4 keys and 9 values 
+15:12:41:156  INFO 18776 --- [main] org.reflections.Reflections              : Reflections took 13 ms to scan 1 urls, producing 3 keys and 10 values 
+15:12:41:160  WARN 18776 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+15:12:41:170  INFO 18776 --- [main] org.reflections.Reflections              : Reflections took 9 ms to scan 1 urls, producing 1 keys and 5 values 
+15:12:41:184  INFO 18776 --- [main] org.reflections.Reflections              : Reflections took 10 ms to scan 1 urls, producing 1 keys and 7 values 
+15:12:41:196  INFO 18776 --- [main] org.reflections.Reflections              : Reflections took 8 ms to scan 1 urls, producing 2 keys and 8 values 
+15:12:41:200  WARN 18776 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+15:12:41:202  INFO 18776 --- [main] com.alibaba.nacos.common.remote.client   : [dc19e873-97db-4929-b1c0-0c4c7a4fa091] RpcClient init label, labels = {module=naming, source=sdk}
+15:12:41:205  INFO 18776 --- [main] com.alibaba.nacos.common.remote.client   : [dc19e873-97db-4929-b1c0-0c4c7a4fa091] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+15:12:41:205  INFO 18776 --- [main] com.alibaba.nacos.common.remote.client   : [dc19e873-97db-4929-b1c0-0c4c7a4fa091] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+15:12:41:206  INFO 18776 --- [main] com.alibaba.nacos.common.remote.client   : [dc19e873-97db-4929-b1c0-0c4c7a4fa091] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+15:12:41:208  INFO 18776 --- [main] com.alibaba.nacos.common.remote.client   : [dc19e873-97db-4929-b1c0-0c4c7a4fa091] Try to connect to server on start up, server: {serverIp = '192.168.100.25', server main port = 8848}
+15:12:45:869  INFO 18776 --- [main] com.alibaba.nacos.common.remote.client   : [dc19e873-97db-4929-b1c0-0c4c7a4fa091] Success to connect to server [192.168.100.25:8848] on start up, connectionId = 1724829167100_192.168.100.18_4659
+15:12:45:870  INFO 18776 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [dc19e873-97db-4929-b1c0-0c4c7a4fa091] Notify connected event to listeners.
+15:12:45:871  INFO 18776 --- [main] com.alibaba.nacos.common.remote.client   : [dc19e873-97db-4929-b1c0-0c4c7a4fa091] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+15:12:45:871  INFO 18776 --- [main] com.alibaba.nacos.common.remote.client   : [dc19e873-97db-4929-b1c0-0c4c7a4fa091] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1130/0x00000008007e3c40
+15:12:45:917  INFO 18776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+15:12:45:927  INFO 18776 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 192.168.220.1:8082 register finished
+15:12:46:423  INFO 18776 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [dc19e873-97db-4929-b1c0-0c4c7a4fa091] Receive server push request, request = NotifySubscriberRequest, requestId = 28
+15:12:46:427  INFO 18776 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [dc19e873-97db-4929-b1c0-0c4c7a4fa091] Ack server push request, request = NotifySubscriberRequest, requestId = 28
+15:12:48:309  INFO 18776 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+15:12:48:309  INFO 18776 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+15:12:48:314  INFO 18776 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+15:12:48:344  INFO 18776 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+15:12:48:439  INFO 18776 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 22.633 seconds (JVM running for 24.035)
+15:21:35:561  INFO 18776 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:21:35:561  INFO 18776 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+15:21:35:562  INFO 18776 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+15:21:35:681  INFO 18776 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+15:21:35:949  INFO 18776 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+15:21:35:958 DEBUG 18776 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:21:35:976 DEBUG 18776 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+15:21:35:997 DEBUG 18776 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+15:21:36:724  INFO 18776 --- [nacos-grpc-client-executor-131] com.alibaba.nacos.common.remote.client   : [dc19e873-97db-4929-b1c0-0c4c7a4fa091] Receive server push request, request = NotifySubscriberRequest, requestId = 38
+15:21:36:725  INFO 18776 --- [nacos-grpc-client-executor-131] com.alibaba.nacos.common.remote.client   : [dc19e873-97db-4929-b1c0-0c4c7a4fa091] Ack server push request, request = NotifySubscriberRequest, requestId = 38
+15:22:44:296 DEBUG 18776 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:22:44:297 DEBUG 18776 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 2(Long)
+15:22:44:298 DEBUG 18776 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+15:22:51:302 DEBUG 18776 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) FROM cart WHERE (user_id = ? AND item_id = ?)
+15:22:51:303 DEBUG 18776 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 2(Long), 2120808(Long)
+15:22:51:306 DEBUG 18776 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+15:22:51:307 DEBUG 18776 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) FROM cart WHERE (user_id = ?)
+15:22:51:308 DEBUG 18776 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 2(Long)
+15:22:51:309 DEBUG 18776 --- [http-nio-8082-exec-4] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+15:22:51:312 DEBUG 18776 --- [http-nio-8082-exec-4] com.hmall.cart.mapper.CartMapper.insert  : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ? )
+15:22:51:312 DEBUG 18776 --- [http-nio-8082-exec-4] com.hmall.cart.mapper.CartMapper.insert  : ==> Parameters: 2(Long), 2120808(Long), 姬龙雪 guy laroche女包 GL经典手提包女牛皮大容量单肩包女欧美时尚包包女包GS1210001-06杏色(String), {}(String), 71800(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t30694/267/398774087/90954/6fc143cf/5bf25358N14dadbf7.jpg!q70.jpg.webp(String)
+15:22:51:410 DEBUG 18776 --- [http-nio-8082-exec-4] com.hmall.cart.mapper.CartMapper.insert  : <==    Updates: 1
+15:22:51:483 DEBUG 18776 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:22:51:484 DEBUG 18776 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 2(Long)
+15:22:51:487 DEBUG 18776 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+15:22:53:914 DEBUG 18776 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:22:53:935 DEBUG 18776 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 2(Long)
+15:22:53:938 DEBUG 18776 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+15:22:55:691 DEBUG 18776 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:22:55:692 DEBUG 18776 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 2(Long)
+15:22:55:696 DEBUG 18776 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
