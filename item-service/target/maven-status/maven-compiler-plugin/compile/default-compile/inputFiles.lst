@@ -5,4 +5,5 @@ D:\develop\javaproject\hmall\item-service\src\main\java\com\hmall\item\domain\po
 D:\develop\javaproject\hmall\item-service\src\main\java\com\hmall\item\ItemApplication.java
 D:\develop\javaproject\hmall\item-service\src\main\java\com\hmall\item\service\IItemService.java
 D:\develop\javaproject\hmall\item-service\src\main\java\com\hmall\item\service\impl\ItemServiceImpl.java
+D:\develop\javaproject\hmall\item-service\src\main\java\com\hmall\item\controller\SearchController.java
 D:\develop\javaproject\hmall\item-service\src\main\java\com\hmall\item\controller\ItemController.java

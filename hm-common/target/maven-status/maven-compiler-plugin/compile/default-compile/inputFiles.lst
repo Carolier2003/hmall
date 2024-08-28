@@ -12,7 +12,9 @@ D:\develop\javaproject\hmall\hm-common\src\main\java\com\hmall\common\utils\Conv
 D:\develop\javaproject\hmall\hm-common\src\main\java\com\hmall\common\utils\BeanUtils.java
 D:\develop\javaproject\hmall\hm-common\src\main\java\com\hmall\common\exception\BadRequestException.java
 D:\develop\javaproject\hmall\hm-common\src\main\java\com\hmall\common\utils\WebUtils.java
+D:\develop\javaproject\hmall\hm-common\src\main\java\com\hmall\common\interceptors\UserInfoInterceptor.java
 D:\develop\javaproject\hmall\hm-common\src\main\java\com\hmall\common\utils\CollUtils.java
 D:\develop\javaproject\hmall\hm-common\src\main\java\com\hmall\common\advice\CommonExceptionAdvice.java
+D:\develop\javaproject\hmall\hm-common\src\main\java\com\hmall\common\config\MvcConfig.java
 D:\develop\javaproject\hmall\hm-common\src\main\java\com\hmall\common\exception\BizIllegalException.java
 D:\develop\javaproject\hmall\hm-common\src\main\java\com\hmall\common\config\JsonConfig.java

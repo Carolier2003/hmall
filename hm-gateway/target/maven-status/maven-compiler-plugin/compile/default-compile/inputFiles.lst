@@ -1,1 +1,7 @@
+D:\develop\javaproject\hmall\hm-gateway\src\main\java\com\hmall\gateway\config\AuthProperties.java
+D:\develop\javaproject\hmall\hm-gateway\src\main\java\com\hmall\gateway\filters\MyGlobalFilter.java
+D:\develop\javaproject\hmall\hm-gateway\src\main\java\com\hmall\gateway\filters\AuthGlobalFilter.java
+D:\develop\javaproject\hmall\hm-gateway\src\main\java\com\hmall\gateway\config\JwtProperties.java
 D:\develop\javaproject\hmall\hm-gateway\src\main\java\com\hmall\gateway\GatewayApplication.java
+D:\develop\javaproject\hmall\hm-gateway\src\main\java\com\hmall\gateway\config\SecurityConfig.java
+D:\develop\javaproject\hmall\hm-gateway\src\main\java\com\hmall\gateway\utils\JwtTool.java
