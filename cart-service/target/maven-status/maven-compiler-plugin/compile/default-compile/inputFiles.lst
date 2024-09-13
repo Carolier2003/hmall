@@ -5,4 +5,5 @@ D:\develop\javaproject\hmall\cart-service\src\main\java\com\hmall\cart\service\I
 D:\develop\javaproject\hmall\cart-service\src\main\java\com\hmall\cart\domain\dto\CartFormDTO.java
 D:\develop\javaproject\hmall\cart-service\src\main\java\com\hmall\cart\mapper\CartMapper.java
 D:\develop\javaproject\hmall\cart-service\src\main\java\com\hmall\cart\CartApplication.java
+D:\develop\javaproject\hmall\cart-service\src\main\java\com\hmall\cart\config\CartProperties.java
 D:\develop\javaproject\hmall\cart-service\src\main\java\com\hmall\cart\domain\vo\CartVO.java

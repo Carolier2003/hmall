@@ -50,7 +50,6 @@ com\hmall\domain\po\Cart.class
 com\hmall\mapper\OrderMapper.class
 com\hmall\domain\po\OrderDetail.class
 com\hmall\service\IOrderLogisticsService.class
-com\hmall\HMallApplication.class
 com\hmall\service\impl\AddressServiceImpl.class
 com\hmall\domain\po\User.class
 com\hmall\service\impl\UserServiceImpl.class

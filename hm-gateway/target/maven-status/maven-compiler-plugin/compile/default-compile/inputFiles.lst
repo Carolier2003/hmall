@@ -4,4 +4,5 @@ D:\develop\javaproject\hmall\hm-gateway\src\main\java\com\hmall\gateway\filters\
 D:\develop\javaproject\hmall\hm-gateway\src\main\java\com\hmall\gateway\config\JwtProperties.java
 D:\develop\javaproject\hmall\hm-gateway\src\main\java\com\hmall\gateway\GatewayApplication.java
 D:\develop\javaproject\hmall\hm-gateway\src\main\java\com\hmall\gateway\config\SecurityConfig.java
+D:\develop\javaproject\hmall\hm-gateway\src\main\java\com\hmall\gateway\routers\DynamicRouterLoader.java
 D:\develop\javaproject\hmall\hm-gateway\src\main\java\com\hmall\gateway\utils\JwtTool.java
